@@ -3,17 +3,24 @@ import os
 import sqlite3
 import smtplib
 from flask import Flask, request, session, g, redirect, url_for, abort, \
-     render_template, flash
-
+     render_template, flash, redirect
+from flask_mail import Mail, Message
 
 app = Flask(__name__) # create the application instance :)
 app.config.from_object(__name__) # load config from this file , flaskr.py
 
-# Load default config and override config from an environment variable
-app.config.update(dict(
-    DATABASE=os.path.join(app.root_path, 'flaskr.db'),
-))
-app.config.from_envvar('FLASKR_SETTINGS', silent=True)
+app.config.update(
+	#DEFAULTS
+	DEBUG=True,
+	#EMAIL SETTINGS
+	MAIL_SERVER='smtp.gmail.com',
+	MAIL_PORT=465,
+	MAIL_USE_SSL=True,
+	MAIL_USERNAME= 'andytsai14@gmail.com',
+	MAIL_PASSWORD= 'Moveon2016!'
+)
+
+mail = Mail(app)
 
 #primary views
 @app.route('/')
@@ -58,12 +65,15 @@ def sponsors():
 #backend for now
 @app.route('/send_email')
 def send_email():
-	server = smtplib.SMTP('smtp.gmail.com', 587)
-	server.starttls()
-	server.login("dynamit.mit@gmail.com", "Dynamitemail")
-	msg = "example dynamit message!"
-	server.sendmail("dynamit.mit@gmail.com", "andytsai14@gmail.com", msg)
-	server.quit()
+	msg = Message(
+		'Hello',
+		sender='andytsai14@gmail.com',
+		recipients=
+			['andytsai08@yahoo.com']
+	)
+	msg.body = "This is the email body"
+	mail.send(msg)
+	return "Sent"
 
 
 if __name__ == '__main__':
