@@ -9,7 +9,7 @@ How to run:
 
 #Final Commit
 
-I've tried fixing CSS bugs and I'm basically illiterate at CSS and can't do it for my life.
+I've tried fixing CSS bugs and I'm basically illiterate at CSS and can't do it for my life. I think only the squares for the sponsors is still a little jank? Otherwise the rest looks ok to me, and shouldn't be at all hard to fix.
 
 Backend is complete with mail-sending and all that good stuff. Sid or whoever has to reply to the emails parents send simply have to click reply, since the parents emails are already configured in the "reply-to" header of the message. 
 
