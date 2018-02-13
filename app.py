@@ -62,7 +62,7 @@ def contact_us():
 		msg = MIMEMultipart()
 		msg['Subject'] = request.form['name'] + ": dynaMIT Contact Email " + now.strftime("%Y/%m/%d")
 		msg['From'] = 'dynamit.mit@gmail.com'
-		msg['To'] = 'andytsai14@gmail.com'#'dynamit_board@mit.edu'
+		msg['To'] = 'dynamit_board@mit.edu'
 		msg['reply-to'] = request.form['email']
 		body = MIMEText(request.form['message'])
 		msg.attach(body)
@@ -70,7 +70,7 @@ def contact_us():
 		server = smtplib.SMTP('smtp.gmail.com', 587)
 		server.starttls()
 		server.login("dynamit.mit@gmail.com", "Dynamitemail")
-		server.sendmail("dynamit.mit@gmail.com", "andytsai14@gmail.com", msg.as_string())
+		server.sendmail("dynamit.mit@gmail.com", "dynamit_board@mit.edu", msg.as_string())
 		server.quit()
 	return render_template('after_send_email.html')
 
