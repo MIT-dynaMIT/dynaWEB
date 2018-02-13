@@ -14,7 +14,6 @@ I think only the squares for the sponsors is still a little jank? Otherwise the 
 List Of Issues:
 1) CSS for sponsors
 2) favicon
-That's it!
 
 Backend is complete with mail-sending and all that good stuff. Sid or whoever has to reply to the emails parents send simply have to click reply, since the parents emails are already configured in the "reply-to" header of the message. 
 
