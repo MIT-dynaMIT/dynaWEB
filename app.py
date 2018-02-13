@@ -62,7 +62,7 @@ def contact_us():
 		msg = MIMEMultipart()
 		msg['Subject'] = request.form['name'] + ": dynaMIT Contact Email " + now.strftime("%Y/%m/%d")
 		msg['From'] = 'dynamit.mit@gmail.com'
-		msg['To'] = 'dynamit_board@mit.edu'
+		msg['To'] = 'andytsai14@gmail.com'#'dynamit_board@mit.edu'
 		msg['reply-to'] = request.form['email']
 		body = MIMEText(request.form['message'])
 		msg.attach(body)
