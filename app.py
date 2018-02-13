@@ -4,7 +4,6 @@ import sqlite3
 import smtplib
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, redirect
-from flask_mail import Mail, Message
 
 app = Flask(__name__) # create the application instance :)
 app.config.from_object(__name__) # load config from this file , flaskr.py
@@ -12,15 +11,7 @@ app.config.from_object(__name__) # load config from this file , flaskr.py
 app.config.update(
 	#DEFAULTS
 	DEBUG=True,
-	#EMAIL SETTINGS
-	MAIL_SERVER='smtp.gmail.com',
-	MAIL_PORT=465,
-	MAIL_USE_SSL=True,
-	MAIL_USERNAME= 'andytsai14@gmail.com',
-	MAIL_PASSWORD= 'Moveon2016!'
 )
-
-mail = Mail(app)
 
 #primary views
 @app.route('/')
@@ -63,17 +54,17 @@ def sponsors():
 
 
 #backend for now
-@app.route('/send_email')
-def send_email():
-	msg = Message(
-		'Hello',
-		sender='andytsai14@gmail.com',
-		recipients=
-			['andytsai08@yahoo.com']
-	)
-	msg.body = "This is the email body"
-	mail.send(msg)
-	return "Sent"
+@app.route('/contact_us', methods=['GET', 'POST'])
+def contact_us():
+	if request.method == "POST":
+		server = smtplib.SMTP('smtp.gmail.com', 587)
+		server.starttls()
+		server.login("dynamit.mit@gmail.com", "Dynamitemail")
+		intro = "This message is from " + request.form['name'] + ". Please send all replies to  " + request.form['email'] + "."
+		msg = intro + "\n" + "\n" + request.form["message"]
+		server.sendmail("dynamit.mit@gmail.com", "andytsai14@gmail.com", msg)
+		server.quit()
+	return render_template('after_send_email.html')
 
 
 if __name__ == '__main__':
