@@ -2,16 +2,16 @@
 import os
 import sqlite3
 import smtplib
+import datetime
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, redirect
+from email.mime.multipart import MIMEMultipart 
+from email.mime.text import MIMEText
+
+
 
 app = Flask(__name__) # create the application instance :)
-app.config.from_object(__name__) # load config from this file , flaskr.py
 
-app.config.update(
-	#DEFAULTS
-	DEBUG=True,
-)
 
 #primary views
 @app.route('/')
@@ -57,12 +57,20 @@ def sponsors():
 @app.route('/contact_us', methods=['GET', 'POST'])
 def contact_us():
 	if request.method == "POST":
+
+		now = datetime.datetime.now()
+		msg = MIMEMultipart()
+		msg['Subject'] = request.form['name'] + ": dynaMIT Contact Email " + now.strftime("%Y/%m/%d")
+		msg['From'] = 'dynamit.mit@gmail.com'
+		msg['To'] = 'dynamit_board@mit.edu'
+		msg['reply-to'] = request.form['email']
+		body = MIMEText(request.form['message'])
+		msg.attach(body)
+
 		server = smtplib.SMTP('smtp.gmail.com', 587)
 		server.starttls()
 		server.login("dynamit.mit@gmail.com", "Dynamitemail")
-		intro = "This message is from " + request.form['name'] + ". Please send all replies to  " + request.form['email'] + "."
-		msg = intro + "\n" + "\n" + request.form["message"]
-		server.sendmail("dynamit.mit@gmail.com", "andytsai14@gmail.com", msg)
+		server.sendmail("dynamit.mit@gmail.com", "andytsai14@gmail.com", msg.as_string())
 		server.quit()
 	return render_template('after_send_email.html')
 
