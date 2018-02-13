@@ -69,7 +69,7 @@ def contact_us():
 
 		server = smtplib.SMTP('smtp.gmail.com', 587)
 		server.starttls()
-		server.login("dynamit.mit@gmail.com", "Dynamitemail")
+		server.login("dynamit.mit@gmail.com", "Dynamitemail") #eventually change this to a config variable set in the heroku instance for security reasons
 		server.sendmail("dynamit.mit@gmail.com", "dynamit_board@mit.edu", msg.as_string())
 		server.quit()
 	return render_template('after_send_email.html')
