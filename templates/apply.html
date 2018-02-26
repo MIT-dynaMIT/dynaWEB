@@ -29,21 +29,38 @@
 
 				<!-- Main -->
 					<div id="main">
-
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>Be Part of DynaMIT</h1>
+						<article class="post featured">
+							<header class="major">
+								<h1>Be Part of DynaMIT</h1>
+							</header>
+							<p> Whether you are a parent looking to enroll your kids in our program or an MIT student who want to be a mentor for the summer, we'd love for you to join us. All applications for camp and for mentors open in the spring.
+						</article>
+						<section class="posts">
+							<article>
+								<header>
+									<h2>Students</h2>
 								</header>
-
-								<!-- Text stuff -->
-									<p>Whether you are a parent looking to enroll your kids in our program or an MIT student who want to be a mentor for the summer, we'd love for you to join us. All applications for camp and for mentors open in the spring.
-									<hr />
-
-									<h2>Come back late February/early March for all applications!</h2>
-
-							</section>
-
+								<a class="image fit"><img src="{{url_for('static', filename='images/student.jpg')}}" alt="" /></a>
+								<p>
+									The student application for dynaMIT summer of 2018 is out! This application will close <b> Wednesday, April 18th at 11:59 PM EST.</b>
+								</p>
+								<ul class="actions">
+									<li><a href="{{ url_for('typical_day') }}" class="button">Be a part of dynaMIT!</a></li>
+								</ul>
+							</article>
+							<article>
+								<header>
+									<h2>Mentors</h2>
+								</header>
+								<a class="image fit"><img src="{{url_for('static', filename='images/mentor.jpg')}}" alt="" /></a>
+								<p>
+									The mentor application for dynaMIT summer of 2018 is out! This application will close <b> Friday, March 2nd at 11:59 PM EST.</b>
+								</p>
+								<ul class="actions">
+									<li><a href="{{ url_for('typical_day') }}" class="button">Become a dynaMentor!</a></li>
+								</ul>
+							</article>
+						</section>
 					</div>
 
 {% endblock %}
