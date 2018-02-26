@@ -5,7 +5,7 @@ import smtplib
 import datetime
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, redirect
-from email.mime.multipart import MIMEMultipart 
+from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 
@@ -52,6 +52,13 @@ def testimonials():
 def sponsors():
 	return render_template('sponsors.html')
 
+@app.route('/apply/students')
+def student_app():
+	return render_template('student_app.html')
+
+@app.route('/apply/mentors')
+def mentor_app():
+	return render_template('mentor_app.html')
 
 #backend for now
 @app.route('/contact_us', methods=['GET', 'POST'])
