@@ -12,8 +12,9 @@
 		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
 		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
 	</head>
-				
-	{% block body %}
+		
+		{% block body %}		
+	<!-- {% block body %}{% endblock %} -->
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
@@ -29,7 +30,8 @@
 							<li><a href="https://github.com/MIT-dynaMIT" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
-	{% endblock %}
+	<!-- {% block body2 %}{% endblock %} -->
+{% endblock %}
 
 <!-- Footer -->
 					<footer id="footer">
