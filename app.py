@@ -34,9 +34,9 @@ def apply():
 def about():
 	return render_template('about.html')
 
-# @app.route('faq')
-# def faq():
-# 	return render_template('faq.html')
+@app.route('/faq')
+def faq():
+	return render_template('faq.html')
 
 #secondary views
 @app.route('/typical_day')
