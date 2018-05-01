@@ -1,9 +1,5 @@
 {% extends "layout.html" %}
-{% block body %}
-	<body class="is-loading">
-
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+{% block title %}
 
 				<!-- Intro -->
 					<div id="intro">
@@ -20,8 +16,8 @@
 						<a class="logo">Welcome to DynaMIT</a>
 					</header>
 
-{{ block.super }}
-
+{% endblock %}
+{% block content %}
 				<!-- Main -->
 					<div id="main">
 
