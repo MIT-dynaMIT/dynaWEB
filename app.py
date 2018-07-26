@@ -34,6 +34,10 @@ def apply():
 def about():
 	return render_template('about.html')
 
+@app.route('/publicity')
+def publicity():
+	return render_template('publicity.html')
+
 @app.route('/faq')
 def faq():
 	return render_template('faq.html')
