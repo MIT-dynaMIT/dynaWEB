@@ -12,7 +12,6 @@ from email.mime.text import MIMEText
 
 app = Flask(__name__) # create the application instance :)
 
-
 #primary views
 @app.route('/')
 def index():

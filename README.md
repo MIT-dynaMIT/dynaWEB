@@ -9,4 +9,4 @@ How to run:
 
 # To Do List
 Current things on Addie's to-do list for the website:
-1) Swap out photos for more recent ones
+1) ~~Swap out photos for more recent ones~~
