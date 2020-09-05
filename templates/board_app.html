@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block body %}
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo">Join Us</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="{{url_for('index') }}">Home</a></li>
+							<li><a href="{{ url_for('about')  }}">About</a></li>
+							<li><a href="{{  url_for('generic')  }}">Board</a></li>
+							<li><a href="{{ url_for('elements')  }}">Donate</a></li>
+							<li><a href="{{ url_for('apply')  }}">Apply</a></li>
+							<li><a href="{{ url_for('publicity')  }}">Publicity</a></li>
+							<li><a href="{{ url_for('faq')  }}">FAQ</a></li>							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/dynamitnonprofit/" class="icon fa-facebook" target="_blank"><span class="label" >Facebook</span></a></li>
+							<li><a href="https://github.com/MIT-dynaMIT" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+
+				<!-- Main -->
+					<div id="main">
+						<article class="post featured">
+							<header class="major">
+								<h1>dynaMIT 2020 Board Application</h1>
+							</header>
+							<p>
+								Are you a current MIT student and want to help plan the curriculum that makes this program possible?
+								The board application for dynaMIT is now open! Applications are due on Friday, September 18th by 11:59pm EDT.
+							</p>
+							<ul class="actions">
+								<li>
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSePHaIIuj5k4hYUdeKWw_CzpzXdfn4EOVgDUaHESfOzvLA8jg/viewform" class="button" target = "_blank">
+									Open the form in a new tab
+								</a>
+								</li>
+							</ul>
+									<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePHaIIuj5k4hYUdeKWw_CzpzXdfn4EOVgDUaHESfOzvLA8jg/viewform"
+									width="100%"
+									height="1500"
+									frameborder="0"
+									marginheight="0"
+									marginwidth="0">Loading...</iframe>
+						</article>
+					</div>
+
+{% endblock %}

@@ -66,6 +66,10 @@ def student_app():
 def mentor_app():
 	return render_template('mentor_app.html')
 
+@app.route('/apply/board')
+def board_app():
+	return render_template('board_app.html')
+
 #backend for now
 @app.route('/contact_us', methods=['GET', 'POST'])
 def contact_us():
