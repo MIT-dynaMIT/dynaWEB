@@ -1,603 +1,657 @@
 {% extends "layout.html" %}
 {% block body %}
-	<body class="is-loading">
+<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a  class="logo">The People Who Make It Happen</a>
-					</header>
+    <!-- Header -->
+    <header id="header">
+        <a class="logo">The People Who Make It Happen</a>
+    </header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="{{url_for('index') }}">Home</a></li>
-							<li><a href="{{ url_for('about')  }}">About</a></li>
-							<li class="active"><a href="{{  url_for('generic')  }}">Board</a></li>
-							<li><a href="{{ url_for('elements')  }}">Donate</a></li>
-							<li><a href="{{ url_for('apply')  }}">Apply</a></li>
-							<li><a href="{{ url_for('publicity')  }}">Publicity</a></li>
-							<li><a href="{{ url_for('faq')  }}">FAQ</a></li>							
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/dynamitnonprofit/" class="icon fa-facebook" target="_blank"><span class="label" >Facebook</span></a></li>
-							<li><a href="https://github.com/MIT-dynaMIT" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="{{url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about')  }}">About</a></li>
+            <li class="active"><a href="{{  url_for('generic')  }}">Board</a></li>
+            <li><a href="{{ url_for('elements')  }}">Donate</a></li>
+            <li><a href="{{ url_for('apply')  }}">Apply</a></li>
+            <li><a href="{{ url_for('publicity')  }}">Publicity</a></li>
+            <li><a href="{{ url_for('faq')  }}">FAQ</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a class="icon fa-facebook" href="https://www.facebook.com/dynamitnonprofit/" target="_blank"><span
+                    class="label">Facebook</span></a></li>
+            <li><a class="icon fa-github" href="https://github.com/MIT-dynaMIT" target="_blank"><span class="label">GitHub</span></a>
+            </li>
+        </ul>
+    </nav>
 
 
-					<div id="main">
-							<article class="post featured">
-								<header class="major">
-									<h2><a>Meet Our Board</a></h2>
-								</header>
-							</article>
+    <div id="main">
+        <article class="post featured">
+            <header class="major">
+                <h2><a>Meet Our Board</a></h2>
+            </header>
+        </article>
 
-							<section class="posts">
-								<article>
-									<header>
-										<h2>Alexis Cho</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/alexis.JPG')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 7: Biology <br/>
-										<b>Year:</b> Class of 2023 <br/>
-										<b>Position:</b> Board member, Social Chair <br/>
-										<b>Hobbies: </b> Writing, drawing, learning languages, and watching winter skating sports <br/>
-										<b>Favorite Science Experiment:</b> Building a simple DC motor <br/>
-										<b>Fun Fact:</b>My favorite movie is Jurassic Park, and I love anything dinosaur-themed! <br/>
-									</p>
-								</article>
+        <section class="posts">
+            <article>
+                <header>
+                    <h2>Alexis Cho</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/alexis.JPG')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 7: Biology <br/>
+                    <b>Year:</b> Class of 2023 <br/>
+                    <b>Position:</b> Board member, Social Chair <br/>
+                    <b>Hobbies: </b> Writing, drawing, learning languages, and watching winter skating sports <br/>
+                    <b>Favorite Science Experiment:</b> Building a simple DC motor <br/>
+                    <b>Fun Fact:</b>My favorite movie is Jurassic Park, and I love anything dinosaur-themed! <br/>
+                </p>
+            </article>
 
-								<article>
-									<header>
-										<h2>Brandon Lei</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/brandon.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 18C: Mathematics with Computer Science<br/>
-										<b>Year:</b> Class of 2024 <br/>
-										<b>Position:</b> Board member, Student Relations <br/>
-										<b>Hobbies: </b> Basketball, dancing, hip-hop, cubing, coding  <br/>
-										<b>Favorite Science Experiment:</b> Density rainbow with fluids <br/>
-										<b>Fun Fact:</b> I can solve a rubix cube in under 20 seconds. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Brianna Yao</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/brianna.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 6-7/20: Computer Science and Biology/Biological Engineering<br/>
-										<b>Year:</b> Class of 2024 <br/>
-										<b>Position:</b> Board member, Student Relations <br/>
-										<b>Hobbies: </b> Calligraphy/bullet journaling, playing tennis, traveling  <br/>
-										<b>Favorite Science Experiment:</b> Color changing milk <br/>
-										<b>Fun Fact:</b> I was a ballsperson at the US Open. <br/>
-									</p>
-								</article>
-								
-								<article>
-									<header>
-										<h2>Christina Ta</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/tina.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 20: Bioengineering<br/>
-										<b>Year:</b> Class of 2022 <br/>
-										<b>Position:</b> Board member, Student Relations <br/>
-										<b>Hobbies: </b> Singing, PC gaming  <br/>
-										<b>Favorite Science Experiment:</b> Magic color changing flower (using ammonia) <br/>
-										<b>Fun Fact:</b> I don't know how to swim or ride a bike. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Daniel Zhang</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/daniel.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 7: Biology <br/>
-										<b>Year:</b> Class of 2022 <br/>
-										<b>Position:</b> 2021 Co-director <br/>
-										<b>Hobbies: </b> Badminton, mystery/sci-fi shows, traveling  <br/>
-										<b>Favorite Science Experiment:</b> Oobleck! <br/>
-										<b>Fun Fact:</b> I own an eppendorf pipette pen. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Darren Lim</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/darren.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 6-9: Computer Science and Cognitive Science<br/>
-										<b>Year:</b> Class of 2023 <br/>
-										<b>Position:</b> Board member, Webmaster, EHS <br/>
-										<b>Hobbies: </b> Cooking, learning languages, VR
-										<br/>
-										<b>Favorite Science Experiment:</b> Infinity mirror clock!
-										<br/>
-										<b>Fun Fact:</b> I have a wall of business cards to represent as "postcards" of past adventures!
-										<br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>David Wu</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/david.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 6-3: Computer Science <br/>
-										<b>Year:</b> Class of 2023 <br/>
-										<b>Position:</b> Board member, EHS <br/>
-										<b>Hobbies: </b> Running and playing tennis. I also enjoy learning new and interesting new things!
-										<br/>
-										<b>Favorite Science Experiment:</b> Teabag rockets
-										<br/>
-										<b>Fun Fact:</b> I'd like to think that I am casually superstitious, and I will wear the same shirt or eat the same foods before doing something important.
-										<br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Emily Fang</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/emily.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 2: Mechanical Engineering <br/>
-										<b>Year:</b> Class of 2023 <br/>
-										<b>Position:</b> Board member, Mentor Relations <br/>
-										<b>Hobbies: </b> Knitting, cross-stitching, watching The Office, napping
-										<br/>
-										<b>Favorite Science Experiment:</b> Exploding Gummy Bear
-										<br/>
-										<b>Fun Fact:</b> I was born with crooked pinkies!
-										<br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Grace Kim</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/grace.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 6-3: Computer Science<br/>
-										<b>Year:</b> Class of 2023 <br/>
-										<b>Position:</b> Board member, Finance <br/>
-										<b>Hobbies: </b> Bullet journaling, drawing, learning how to bake bit by bit <br/>
-										<b>Favorite Science Experiment:</b> Optical clocks (that proved relativity) <br/>
-										<b>Fun Fact:</b> I held Lauv's hand at his concert in Boston!
-										<br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Jason Li</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/jason.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 11-6: Urban Science and Planning with Computer Science <br/>
-										<b>Year:</b> Class of 2024 <br/>
-										<b>Position:</b> Board member, Mentor Relations <br/>
-										<b>Hobbies: </b> Singing, swimming, staying up later than planned  <br/>
-										<b>Favorite Science Experiment:</b> Hoop Glider <br/>
-										<b>Fun Fact:</b> I collect rubber ducks. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Jennifer Wen</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/jennifer.JPG')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 20: Bioengineering <br/>
-										<b>Year:</b> Class of 2023 <br/>
-										<b>Position:</b> Board member, Social Chair <br/>
-										<b>Hobbies: </b> Dancing, pilates-yoga, eating yummy food  <br/>
-										<b>Favorite Science Experiment:</b> Ice Cream in a Bag <br/>
-										<b>Fun Fact:</b> I have a photo album dedicated to my favorite memes! <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Julia Chen</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/julia.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Undecided<br/>
-										<b>Year:</b> Class of 2024 <br/>
-										<b>Position:</b> Board member, Mentor Relations <br/>
-										<b>Hobbies: </b> Soccer, Tiktok  <br/>
-										<b>Favorite Science Experiment:</b> Van De Graff Generator <br/>
-										<b>Fun Fact:</b> I'm basically addicted to gum. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Katie Gravel</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/katie.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 18: Mathematics <br/>
-										<b>Year:</b> Class of 2021 <br/>
-										<b>Position:</b> Board member, Mentor Relations <br/>
-										<b>Hobbies: </b> Talking aimless walks, climbing, and watching rom coms
-										<br/>
-										<b>Favorite Science Experiment:</b> Strawberry DNA
-										<br/>
-										<b>Fun Fact:</b> All of photos for my spotify playlists are pictures of cows
-										<br/>
-									</p>
-								</article>								
-								<article>
-									<header>
-										<h2>Morgan Mayborne</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/morgan.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 2: Mechanical Engineering <br/>
-										<b>Year:</b> Class of 2023 <br/>
-										<b>Position:</b> Board member, Student Relations <br/>
-										<b>Hobbies: </b> Drums, Baseball, Pulling unproductive all-nighters, and writing
-										<br/>
-										<b>Favorite Science Experiment:</b> Elephant Toothpaste!!
-										<br/>
-										<b>Fun Fact:</b> I have never ever in my life had a "good hair day".
-										<br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Muye Yang "Willers"</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/willers.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 8: Physics and Course 18: Mathematics <br/>
-										<b>Year:</b> Class of 2022 <br/>
-										<b>Position:</b> 2021 Co-director <br/>
-										<b>Hobbies: </b> Photography, tea, doodling, board games, math & physics <br/>
-										<b>Favorite Science Experiment:</b> Iodine clock <br/>
-										<b>Fun Fact:</b> I’ve attended 7 elementary/middle schools and 3 high schools ¯\_(ツ)_/¯ <br/>
-									</p>
-								</article>	
-								<article>
-									<header>
-										<h2>Neil Deshmukh</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/neil.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 6-3: Computer Science<br/>
-										<b>Year:</b> Class of 2024 <br/>
-										<b>Position:</b> Board member, Pub + Swag <br/>
-										<b>Hobbies: </b> Biking, soccer, Overwatch, chilling with friends  <br/>
-										<b>Favorite Science Experiment:</b> Laminar Flow balloon <br/>
-										<b>Fun Fact:</b> Even if I have my phone in hand, I somehow manage to get it lost. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Shriya Rangaswamy</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/shriya.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 20: Bioengineering<br/>
-										<b>Year:</b> Class of 2024 <br/>
-										<b>Position:</b> Board member, Pub + Swag <br/>
-										<b>Hobbies: </b> Singing, drawing, cooking, and origami  <br/>
-										<b>Favorite Science Experiment:</b> Making ice cream via freezing point depression <br/>
-										<b>Fun Fact:</b> I never follow recipes; I always come up with my own! <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Summer Vo</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/summer.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 6-3: Computer Science <br/>
-										<b>Year:</b> Class of 2021 <br/>
-										<b>Position:</b> Board member, Pub + Swag <br/>
-										<b>Hobbies: </b> Singing, sewing, doodling, folding paper stars <br/>
-										<b>Favorite Science Experiment:</b> Strawberry DNA <br/>
-										<b>Fun Fact:</b> I studied Math and Science at a Fine Arts high school. <br/>
-									</p>
-								</article>	
-								<article>
-									<header>
-										<h2>Syamantak Payra</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/syamantak.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 6-2: Electrical Engineering and Computer Science <br/>
-										<b>Year:</b> Class of 2022 <br/>
-										<b>Position:</b> Board member, Finance <br/>
-										<b>Hobbies: </b> Cars, discovering new music, Wikipedia rabbitholes <br/>
-										<b>Favorite Science Experiment:</b> Spaghetti bridges <br/>
-										<b>Fun Fact:</b> My friends once took to calling me Mary Poppins because my backpack always has practically anything you might ever need. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Vainavi Mukkamala</h2>
-									</header>
-									<a class="image fit"><img style="height: 512px; object-fit: contain;" src="{{url_for('static', filename='images_20_21/board/vainavi.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 20: Bioengineering <br/>
-										<b>Year:</b> Class of 2023 <br/>
-										<b>Position:</b> Board member, Finance <br/>
-										<b>Hobbies: </b> Painting, running, watching Indian films <br/>
-										<b>Favorite Science Experiment:</b> Cheek cell DNA extraction <br/>
-										<b>Fun Fact:</b> My first roller coaster was Kingda Ka, which is supposedly the tallest in the Northeast ;P <br/>
-									</p>
-								</article>
+            <article>
+                <header>
+                    <h2>Brandon Lei</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/brandon.jpg')}}"
+                                          style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 18C: Mathematics with Computer Science<br/>
+                    <b>Year:</b> Class of 2024 <br/>
+                    <b>Position:</b> Board member, Student Relations <br/>
+                    <b>Hobbies: </b> Basketball, dancing, hip-hop, cubing, coding <br/>
+                    <b>Favorite Science Experiment:</b> Density rainbow with fluids <br/>
+                    <b>Fun Fact:</b> I can solve a rubix cube in under 20 seconds. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Brianna Yao</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/brianna.jpg')}}"
+                                          style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 6-7/20: Computer Science and Biology/Biological Engineering<br/>
+                    <b>Year:</b> Class of 2024 <br/>
+                    <b>Position:</b> Board member, Student Relations <br/>
+                    <b>Hobbies: </b> Calligraphy/bullet journaling, playing tennis, traveling <br/>
+                    <b>Favorite Science Experiment:</b> Color changing milk <br/>
+                    <b>Fun Fact:</b> I was a ballsperson at the US Open. <br/>
+                </p>
+            </article>
 
-							</section>
-							<article class="post featured">
-								<header class="major">
-									<h2><a>Previous Board Members</a></h2>
-								</header>
-							</article>
-							<section class="posts">
-								<article>
-									<header>
-										<h2>Addie Oh</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images_19_20/board/addie.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 6-3: Computer Science and Course 17: Political Science <br/>
-										<b>Year:</b> Class of 2020 <br/>
-										<b>Position:</b> Board member, Publicity <br/>
-										<b>Hobbies: </b> Napping, blasting podcasts in the shower, passive aggressive emailing <br/>
-										<b>Favorite Science Experiment:</b> Marshmallow catapults <br/>
-										<b>Fun Fact:</b> There is no limit to the number of tangerines I can eat in one sitting. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Aman Patel</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images_19_20/board/aman.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 6-7: Computer Science and Molecular Biology  <br/>
-										<b>Year:</b> Class of 2020 <br/>
-										<b>Position:</b> Board member, EHS Chair <br/>
-										<b>Hobbies: </b> Playing tennis, watching sports, reading, learning new things <br/>
-										<b>Favorite Science Experiment:</b> Pure carbon from sugar and sulfuric acid!<br/>
-										<b>Fun Fact:</b> I don’t like chocolate, but I love asparagus! <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Carolyn Jons</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images_19_20/board/carolyn.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 3: Material Science<br/>
-										<b>Year:</b> Class of 2020 <br/>
-										<b>Position:</b> Board member, Finance <br/>
-										<b>Hobbies: </b> Unicycling, running, art, violin, cooking, baking <br/>
-										<b>Favorite Science Experiment:</b> Glowing Pickle!<br/>
-										<b>Fun Fact:</b> I won the Iowa State Fair grape stomping competition. The prize was an expensive bottle of wine they couldn't legally give me. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Chiaki Kirby</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images_19_20/board/chiaki.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 2: Mechanical Engineering   <br/>
-										<b>Year:</b> Class of 2020 <br/>
-										<b>Position:</b> Board member, Mentor Relations <br/>
-										<b>Hobbies: </b> Reading, anything Camp Kesem, overly dramatic fantasy shows, Marvel movies <br/>
-										<b>Favorite Science Experiment:</b> Trashcan vortex rings <br/>
-										<b>Fun Fact:</b> I love Japanese snacks more than anything else. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Meghana Kamineni</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images_19_20/board/meghana.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 6-7: Computer Science and Molecular Biology  <br/>
-										<b>Year:</b> Class of 2021 <br/>
-										<b>Position:</b> 2020 Co-director <br/>
-										<b>Hobbies: </b> Exploring the city, trying to cook new things, hanging out with friends <br/>
-										<b>Favorite Science Experiment:</b> The classic – rubbing a balloon against your hair to make static electricity!<br/>
-										<b>Fun Fact:</b> I can usually wake up from naps after twenty minutes without an alarm clock. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Nathan Liang </h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images_19_20/board/nathan.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 20: Bioengineering <br/>
-										<b>Year:</b> Class of 2021 <br/>
-										<b>Position:</b> 2020 Co-director <br/>
-										<b>Hobbies: </b> The Tech (MIT’s student-run newspaper), MIT Lion Dance, video games, obsessively watching and critiquing movies <br/>
-										<b>Favorite Science Experiment:</b> Non-Newtonian fluids dancing on speakers <br/>
-										<b>Fun Fact:</b> I share my birthday with my dad and little sister! <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Elissa Ito</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images_19_20/board/elissa.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 2: Mechanical Engineering <br/>
-										<b>Year:</b> Class of 2023 <br/>
-										<b>Position:</b> Board member <br/>
-										<b>Hobbies: </b> Sailing, Squash, Cooking  <br/>
-										<b>Favorite Science Experiment:</b> Growing gummy bears in water!! <br/>
-										<b>Fun Fact:</b> I own a cotton candy machine at home.<br/>
-									</p>
-								</article>
+            <article>
+                <header>
+                    <h2>Christina Ta</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/tina.jpg')}}"
+                                          style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 20: Bioengineering<br/>
+                    <b>Year:</b> Class of 2022 <br/>
+                    <b>Position:</b> Board member, Student Relations <br/>
+                    <b>Hobbies: </b> Singing, PC gaming <br/>
+                    <b>Favorite Science Experiment:</b> Magic color changing flower (using ammonia) <br/>
+                    <b>Fun Fact:</b> I don't know how to swim or ride a bike. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Daniel Zhang</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/daniel.jpg')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 7: Biology <br/>
+                    <b>Year:</b> Class of 2022 <br/>
+                    <b>Position:</b> 2021 Co-director <br/>
+                    <b>Hobbies: </b> Badminton, mystery/sci-fi shows, traveling <br/>
+                    <b>Favorite Science Experiment:</b> Oobleck! <br/>
+                    <b>Fun Fact:</b> I own an eppendorf pipette pen. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Darren Lim</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/darren.jpg')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 6-9: Computer Science and Cognitive Science<br/>
+                    <b>Year:</b> Class of 2023 <br/>
+                    <b>Position:</b> Board member, Webmaster, EHS <br/>
+                    <b>Hobbies: </b> Cooking, learning languages, VR
+                    <br/>
+                    <b>Favorite Science Experiment:</b> Infinity mirror clock!
+                    <br/>
+                    <b>Fun Fact:</b> I have a wall of business cards to represent as "postcards" of past adventures!
+                    <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>David Wu</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/david.jpg')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 6-3: Computer Science <br/>
+                    <b>Year:</b> Class of 2023 <br/>
+                    <b>Position:</b> Board member, EHS <br/>
+                    <b>Hobbies: </b> Running and playing tennis. I also enjoy learning new and interesting new things!
+                    <br/>
+                    <b>Favorite Science Experiment:</b> Teabag rockets
+                    <br/>
+                    <b>Fun Fact:</b> I'd like to think that I am casually superstitious, and I will wear the same shirt
+                    or eat the same foods before doing something important.
+                    <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Emily Fang</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/emily.jpg')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 2: Mechanical Engineering <br/>
+                    <b>Year:</b> Class of 2023 <br/>
+                    <b>Position:</b> Board member, Mentor Relations <br/>
+                    <b>Hobbies: </b> Knitting, cross-stitching, watching The Office, napping
+                    <br/>
+                    <b>Favorite Science Experiment:</b> Exploding Gummy Bear
+                    <br/>
+                    <b>Fun Fact:</b> I was born with crooked pinkies!
+                    <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Grace Kim</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/grace.jpg')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 6-3: Computer Science<br/>
+                    <b>Year:</b> Class of 2023 <br/>
+                    <b>Position:</b> Board member, Finance <br/>
+                    <b>Hobbies: </b> Bullet journaling, drawing, learning how to bake bit by bit <br/>
+                    <b>Favorite Science Experiment:</b> Optical clocks (that proved relativity) <br/>
+                    <b>Fun Fact:</b> I held Lauv's hand at his concert in Boston!
+                    <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Jason Li</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/jason.jpg')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 11-6: Urban Science and Planning with Computer Science <br/>
+                    <b>Year:</b> Class of 2024 <br/>
+                    <b>Position:</b> Board member, Mentor Relations <br/>
+                    <b>Hobbies: </b> Singing, swimming, staying up later than planned <br/>
+                    <b>Favorite Science Experiment:</b> Hoop Glider <br/>
+                    <b>Fun Fact:</b> I collect rubber ducks. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Jennifer Wen</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/jennifer.JPG')}}"
+                                          style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 20: Bioengineering <br/>
+                    <b>Year:</b> Class of 2023 <br/>
+                    <b>Position:</b> Board member, Social Chair <br/>
+                    <b>Hobbies: </b> Dancing, pilates-yoga, eating yummy food <br/>
+                    <b>Favorite Science Experiment:</b> Ice Cream in a Bag <br/>
+                    <b>Fun Fact:</b> I have a photo album dedicated to my favorite memes! <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Julia Chen</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/julia.jpg')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Undecided<br/>
+                    <b>Year:</b> Class of 2024 <br/>
+                    <b>Position:</b> Board member, Mentor Relations <br/>
+                    <b>Hobbies: </b> Soccer, Tiktok <br/>
+                    <b>Favorite Science Experiment:</b> Van De Graff Generator <br/>
+                    <b>Fun Fact:</b> I'm basically addicted to gum. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Katie Gravel</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/katie.jpg')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 18: Mathematics <br/>
+                    <b>Year:</b> Class of 2021 <br/>
+                    <b>Position:</b> Board member, Mentor Relations <br/>
+                    <b>Hobbies: </b> Talking aimless walks, climbing, and watching rom coms
+                    <br/>
+                    <b>Favorite Science Experiment:</b> Strawberry DNA
+                    <br/>
+                    <b>Fun Fact:</b> All of photos for my spotify playlists are pictures of cows
+                    <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Morgan Mayborne</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/morgan.jpg')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 2: Mechanical Engineering <br/>
+                    <b>Year:</b> Class of 2023 <br/>
+                    <b>Position:</b> Board member, Student Relations <br/>
+                    <b>Hobbies: </b> Drums, Baseball, Pulling unproductive all-nighters, and writing
+                    <br/>
+                    <b>Favorite Science Experiment:</b> Elephant Toothpaste!!
+                    <br/>
+                    <b>Fun Fact:</b> I have never ever in my life had a "good hair day".
+                    <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Muye Yang "Willers"</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/willers.jpg')}}"
+                                          style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 8: Physics and Course 18: Mathematics <br/>
+                    <b>Year:</b> Class of 2022 <br/>
+                    <b>Position:</b> 2021 Co-director <br/>
+                    <b>Hobbies: </b> Photography, tea, doodling, board games, math & physics <br/>
+                    <b>Favorite Science Experiment:</b> Iodine clock <br/>
+                    <b>Fun Fact:</b> I’ve attended 7 elementary/middle schools and 3 high schools ¯\_(ツ)_/¯ <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Neil Deshmukh</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/neil.jpg')}}"
+                                          style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 6-3: Computer Science<br/>
+                    <b>Year:</b> Class of 2024 <br/>
+                    <b>Position:</b> Board member, Pub + Swag <br/>
+                    <b>Hobbies: </b> Biking, soccer, Overwatch, chilling with friends <br/>
+                    <b>Favorite Science Experiment:</b> Laminar Flow balloon <br/>
+                    <b>Fun Fact:</b> Even if I have my phone in hand, I somehow manage to get it lost. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Shriya Rangaswamy</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/shriya.jpg')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 20: Bioengineering<br/>
+                    <b>Year:</b> Class of 2024 <br/>
+                    <b>Position:</b> Board member, Pub + Swag <br/>
+                    <b>Hobbies: </b> Singing, drawing, cooking, and origami <br/>
+                    <b>Favorite Science Experiment:</b> Making ice cream via freezing point depression <br/>
+                    <b>Fun Fact:</b> I never follow recipes; I always come up with my own! <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Summer Vo</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/summer.jpg')}}" style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 6-3: Computer Science <br/>
+                    <b>Year:</b> Class of 2021 <br/>
+                    <b>Position:</b> Board member, Pub + Swag <br/>
+                    <b>Hobbies: </b> Singing, sewing, doodling, folding paper stars <br/>
+                    <b>Favorite Science Experiment:</b> Strawberry DNA <br/>
+                    <b>Fun Fact:</b> I studied Math and Science at a Fine Arts high school. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Syamantak Payra</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/syamantak.jpg')}}"
+                                          style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 6-2: Electrical Engineering and Computer Science <br/>
+                    <b>Year:</b> Class of 2022 <br/>
+                    <b>Position:</b> Board member, Finance <br/>
+                    <b>Hobbies: </b> Cars, discovering new music, Wikipedia rabbitholes <br/>
+                    <b>Favorite Science Experiment:</b> Spaghetti bridges <br/>
+                    <b>Fun Fact:</b> My friends once took to calling me Mary Poppins because my backpack always has
+                    practically anything you might ever need. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Vainavi Mukkamala</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_20_21/board/vainavi.jpg')}}"
+                                          style="height: 512px; object-fit: contain;"/></a>
+                <p>
+                    <b>Major:</b> Course 20: Bioengineering <br/>
+                    <b>Year:</b> Class of 2023 <br/>
+                    <b>Position:</b> Board member, Finance <br/>
+                    <b>Hobbies: </b> Painting, running, watching Indian films <br/>
+                    <b>Favorite Science Experiment:</b> Cheek cell DNA extraction <br/>
+                    <b>Fun Fact:</b> My first roller coaster was Kingda Ka, which is supposedly the tallest in the
+                    Northeast ;P <br/>
+                </p>
+            </article>
 
-								<article>
-									<header>
-										<h2>Maddi Focaracci</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images/board/dynamit_maddi_edited.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 16: AeroAstro <br/>
-										<b>Year:</b> Class of 2021 <br/>
-										<b>Position:</b> Board member <br/>
-										<b>Hobbies: </b> Ultimate frisbee, painting, baking things, listening to my favorite movie soundtracks  <br/>
-										<b>Favorite Science Experiment:</b> Elephant toothpaste experiment! <br/>
-										<b>Fun Fact:</b> I’ve done a zero gravity maneuver in an airplane! <br/>
-									</p>
-								</article>
+        </section>
+        <article class="post featured">
+            <header class="major">
+                <h2><a>Previous Board Members</a></h2>
+            </header>
+        </article>
+        <section class="posts">
+            <article>
+                <header>
+                    <h2>Addie Oh</h2>
+                </header>
+                <a class="image fit"><img alt="" src="{{url_for('static', filename='images_19_20/board/addie.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 6-3: Computer Science and Course 17: Political Science <br/>
+                    <b>Year:</b> Class of 2020 <br/>
+                    <b>Position:</b> Board member, Publicity <br/>
+                    <b>Hobbies: </b> Napping, blasting podcasts in the shower, passive aggressive emailing <br/>
+                    <b>Favorite Science Experiment:</b> Marshmallow catapults <br/>
+                    <b>Fun Fact:</b> There is no limit to the number of tangerines I can eat in one sitting. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Aman Patel</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_19_20/board/aman.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 6-7: Computer Science and Molecular Biology <br/>
+                    <b>Year:</b> Class of 2020 <br/>
+                    <b>Position:</b> Board member, EHS Chair <br/>
+                    <b>Hobbies: </b> Playing tennis, watching sports, reading, learning new things <br/>
+                    <b>Favorite Science Experiment:</b> Pure carbon from sugar and sulfuric acid!<br/>
+                    <b>Fun Fact:</b> I don’t like chocolate, but I love asparagus! <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Carolyn Jons</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_19_20/board/carolyn.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 3: Material Science<br/>
+                    <b>Year:</b> Class of 2020 <br/>
+                    <b>Position:</b> Board member, Finance <br/>
+                    <b>Hobbies: </b> Unicycling, running, art, violin, cooking, baking <br/>
+                    <b>Favorite Science Experiment:</b> Glowing Pickle!<br/>
+                    <b>Fun Fact:</b> I won the Iowa State Fair grape stomping competition. The prize was an expensive
+                    bottle of wine they couldn't legally give me. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Chiaki Kirby</h2>
+                </header>
+                <a class="image fit"><img alt="" src="{{url_for('static', filename='images_19_20/board/chiaki.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 2: Mechanical Engineering <br/>
+                    <b>Year:</b> Class of 2020 <br/>
+                    <b>Position:</b> Board member, Mentor Relations <br/>
+                    <b>Hobbies: </b> Reading, anything Camp Kesem, overly dramatic fantasy shows, Marvel movies <br/>
+                    <b>Favorite Science Experiment:</b> Trashcan vortex rings <br/>
+                    <b>Fun Fact:</b> I love Japanese snacks more than anything else. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Meghana Kamineni</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images_19_20/board/meghana.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 6-7: Computer Science and Molecular Biology <br/>
+                    <b>Year:</b> Class of 2021 <br/>
+                    <b>Position:</b> 2020 Co-director <br/>
+                    <b>Hobbies: </b> Exploring the city, trying to cook new things, hanging out with friends <br/>
+                    <b>Favorite Science Experiment:</b> The classic – rubbing a balloon against your hair to make static
+                    electricity!<br/>
+                    <b>Fun Fact:</b> I can usually wake up from naps after twenty minutes without an alarm clock. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Nathan Liang </h2>
+                </header>
+                <a class="image fit"><img alt="" src="{{url_for('static', filename='images_19_20/board/nathan.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 20: Bioengineering <br/>
+                    <b>Year:</b> Class of 2021 <br/>
+                    <b>Position:</b> 2020 Co-director <br/>
+                    <b>Hobbies: </b> The Tech (MIT’s student-run newspaper), MIT Lion Dance, video games, obsessively
+                    watching and critiquing movies <br/>
+                    <b>Favorite Science Experiment:</b> Non-Newtonian fluids dancing on speakers <br/>
+                    <b>Fun Fact:</b> I share my birthday with my dad and little sister! <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Elissa Ito</h2>
+                </header>
+                <a class="image fit"><img alt="" src="{{url_for('static', filename='images_19_20/board/elissa.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 2: Mechanical Engineering <br/>
+                    <b>Year:</b> Class of 2023 <br/>
+                    <b>Position:</b> Board member <br/>
+                    <b>Hobbies: </b> Sailing, Squash, Cooking <br/>
+                    <b>Favorite Science Experiment:</b> Growing gummy bears in water!! <br/>
+                    <b>Fun Fact:</b> I own a cotton candy machine at home.<br/>
+                </p>
+            </article>
 
-								<article>
-									<header>
-										<h2>Julia Cho</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images/board/dynamit_julia_edited.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 7: Biology  <br/>
-										<b>Year:</b> Class of 2020 <br/>
-										<b>Position:</b> Co-director <br/>
-										<b>Hobbies: </b> Sailing <br/>
-										<b>Favorite Science Experiment:</b> Strawberry DNA <br/>
-										<b>Fun Fact:</b> I was born with two congenital heart defects that I had open-heart surgery for! <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Rebecca Shin</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images/board/dynamit_rebecca_edited.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 14: Economics and Course 15: Management <br/>
-										<b>Year:</b> Class of 2020 <br/>
-										<b>Position:</b> Co-director <br/>
-										<b>Hobbies: </b>Reading, playing music, eating   <br/>
-										<b>Favorite Science Experiment:</b> The Marshmallow Challenge <br/>
-										<b>Fun Fact:</b> I never got my permit or driver's license... oops. <br/>
-									</p>
-							</article>
-							<article>
-								<header>
-									<h2>Stacy Godfreey-Igwe</h2>
-								</header>
-								<a class="image fit"><img src="{{url_for('static', filename='images/board/dynamit_stacy_edited.jpg')}}" alt="" /></a>
-								<p>
-									<b>Major:</b> Course 2A: Mechanical Engineering and Course 17: Political Science <br/>
-									<b>Year:</b> Class of 2022 <br/>
-									<b>Position:</b> Previous Board member <br/>
-									<b>Hobbies: </b> Viola, card games, journaling, reading  <br/>
-									<b>Favorite Science Experiment:</b> Elephant Toothpaste <br/>
-									<b>Fun Fact:</b> I have a twin sister and we share a birthday with MIT! <br/>
-								</p>
-							</article>
-							<article>
-								<header>
-									<h2>Tim Gutterman</h2>
-								</header>
-								<a class="image fit"><img src="{{url_for('static', filename='images/board/dynamit_tim_edited.jpg')}}" alt="" /></a>
-								<p>
-									<b>Major:</b> Course 9: Brain and Cognitive Sciences <br/>
-									<b>Year:</b> Class of 2022 <br/>
-									<b>Position:</b> Previous Board member <br/>
-									<b>Hobbies: </b> Lifting, sci-fi/fantasy novels, whipping and/or naynaying <br/>
-									<b>Favorite Science Experiment:</b> Bobo Dolls (for obvious reasons) <br/>
-									<b>Fun Fact:</b> My primary password is over twenty characters long and would take 19 septillion years to crack. <br/>
-								</p>
-							</article>	
-							<article>
-								<header>
-									<h2>Sope Eweje</h2>
-								</header>
-								<a class="image fit"><img src="{{url_for('static', filename='images/board/sope.jpg')}}" alt="" /></a>
-								<p>
-									<b>Major:</b> Course 2: Mechanical Engineering  <br/>
-									<b>Year:</b> Class of 2019 <br/>
-									<b>Position:</b> Previous Board member, Student Outreach <br/>
-									<b>Hobbies: </b> Playing saxophone, basketball, watching sports  <br/>
-									<b>Favorite Science Experiment:</b> Van de Graff generator!<br/>
-									<b>Fun Fact:</b> I have an identical twin brother. <br/>
-								</p>
-							</article>
+            <article>
+                <header>
+                    <h2>Maddi Focaracci</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images/board/dynamit_maddi_edited.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 16: AeroAstro <br/>
+                    <b>Year:</b> Class of 2021 <br/>
+                    <b>Position:</b> Board member <br/>
+                    <b>Hobbies: </b> Ultimate frisbee, painting, baking things, listening to my favorite movie
+                    soundtracks <br/>
+                    <b>Favorite Science Experiment:</b> Elephant toothpaste experiment! <br/>
+                    <b>Fun Fact:</b> I’ve done a zero gravity maneuver in an airplane! <br/>
+                </p>
+            </article>
 
-							<article>
-									<header>
-										<h2>Nan Tian</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images/board/nan.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 18: Mathematics <br/>
-										<b>Year:</b> Class of 2019 <br/>
-										<b>Position:</b> 2018 Director <br/>
-										<b>Hobbies:</b> Traveling, Hiking, Eating, Yoga, Salsa Dancing, Fantasy Football <br/>
-										<b>Favorite Science Experiment:</b> Elephant Toothpaste with Hydrogen Peroxide! <br/>
-										<b>Fun Fact:</b> You and I add up better than a Riemann Sum ;)  <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Kelvin Lu</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images/board/kelvin.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 6-2: EECS <br/>
-										<b>Year:</b> Class of 2019 <br/>
-										<b>Position:</b> 2018 Director <br/>
-										<b>Hobbies: </b> Baking pastries, Reading, Dancing (K-Pop!), Contributing to the Online Discourse <br/>
-										<b>Favorite Science Experiment:</b> Magnifying glass on a hot, dry summer day to burn leaves!  <br/>
-										<b>Fun Fact:</b> I met a girl named Joule before! Lots of energy.  <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Alice Zhou</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images/board/alice.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 7 & 15: Biology and Management  <br/>
-										<b>Year:</b> Class of 2020 <br/>
-										<b>Position:</b> Previous Board member <br/>
-										<b>Hobbies: </b> Reading, Traveling, Exploring, Fencing, Drinking tea, Saving lives as an EMT 😉 <br/>
-										<b>Favorite Science Experiment:</b> Creating glow in the dark E.coli!<br/>
-										<b>Fun Fact:</b> She loves all types of potatoes. <br/>
-									</p>
-								</article>
+            <article>
+                <header>
+                    <h2>Julia Cho</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images/board/dynamit_julia_edited.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 7: Biology <br/>
+                    <b>Year:</b> Class of 2020 <br/>
+                    <b>Position:</b> Co-director <br/>
+                    <b>Hobbies: </b> Sailing <br/>
+                    <b>Favorite Science Experiment:</b> Strawberry DNA <br/>
+                    <b>Fun Fact:</b> I was born with two congenital heart defects that I had open-heart surgery for!
+                    <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Rebecca Shin</h2>
+                </header>
+                <a class="image fit"><img
+                        alt="" src="{{url_for('static', filename='images/board/dynamit_rebecca_edited.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 14: Economics and Course 15: Management <br/>
+                    <b>Year:</b> Class of 2020 <br/>
+                    <b>Position:</b> Co-director <br/>
+                    <b>Hobbies: </b>Reading, playing music, eating <br/>
+                    <b>Favorite Science Experiment:</b> The Marshmallow Challenge <br/>
+                    <b>Fun Fact:</b> I never got my permit or driver's license... oops. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Stacy Godfreey-Igwe</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images/board/dynamit_stacy_edited.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 2A: Mechanical Engineering and Course 17: Political Science <br/>
+                    <b>Year:</b> Class of 2022 <br/>
+                    <b>Position:</b> Previous Board member <br/>
+                    <b>Hobbies: </b> Viola, card games, journaling, reading <br/>
+                    <b>Favorite Science Experiment:</b> Elephant Toothpaste <br/>
+                    <b>Fun Fact:</b> I have a twin sister and we share a birthday with MIT! <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Tim Gutterman</h2>
+                </header>
+                <a class="image fit"><img alt=""
+                                          src="{{url_for('static', filename='images/board/dynamit_tim_edited.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 9: Brain and Cognitive Sciences <br/>
+                    <b>Year:</b> Class of 2022 <br/>
+                    <b>Position:</b> Previous Board member <br/>
+                    <b>Hobbies: </b> Lifting, sci-fi/fantasy novels, whipping and/or naynaying <br/>
+                    <b>Favorite Science Experiment:</b> Bobo Dolls (for obvious reasons) <br/>
+                    <b>Fun Fact:</b> My primary password is over twenty characters long and would take 19 septillion
+                    years to crack. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Sope Eweje</h2>
+                </header>
+                <a class="image fit"><img alt="" src="{{url_for('static', filename='images/board/sope.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 2: Mechanical Engineering <br/>
+                    <b>Year:</b> Class of 2019 <br/>
+                    <b>Position:</b> Previous Board member, Student Outreach <br/>
+                    <b>Hobbies: </b> Playing saxophone, basketball, watching sports <br/>
+                    <b>Favorite Science Experiment:</b> Van de Graff generator!<br/>
+                    <b>Fun Fact:</b> I have an identical twin brother. <br/>
+                </p>
+            </article>
 
-								<article>
-									<header>
-										<h2>Siddarth Guha</h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images/board/sid.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 20: Biological Engineering   <br/>
-										<b>Year:</b> Class of 2019 <br/>
-										<b>Position:</b> Previous Board member <br/>
-										<b>Hobbies: </b> Singing, Theater, Asian food, Horror Movies  <br/>
-										<b>Favorite Science Experiment:</b> The Barking Dog!<br/>
-										<b>Fun Fact:</b> When I got to college, my roommate always took out the trash for me when I wasn't around, so for the first semester of college, I thought we had a room service that would take out our trash for us. <br/>
-									</p>
-								</article>
-								<article>
-									<header>
-										<h2>Yonah Borns-Weil </h2>
-									</header>
-									<a class="image fit"><img src="{{url_for('static', filename='images/board/yonah.jpg')}}" alt="" /></a>
-									<p>
-										<b>Major:</b> Course 18: Mathematics  <br/>
-										<b>Year:</b> Class of 2018<br/>
-										<b>Position:</b> Previous Board member <br/>
-										<b>Hobbies: </b> : Skiing, Hiking, Lifting weights, Ping pong, Other sports that I’m even worse at, Talking over-energetically about random stuff, Traveling, Really spicy food, Making really long lists <br/>
-										<b>Favorite Science Experiment:</b> Making Lichtenberg figures on wood (don’t try this one at home)!<br/>
-										<b>Fun Fact:</b> Most physicists agree that the big bang had the greatest energy density in history, but I think that I’m a close second. <br/>
-									</p>
-								</article>
-							</section>
-					</div>
-{% endblock %}
+            <article>
+                <header>
+                    <h2>Nan Tian</h2>
+                </header>
+                <a class="image fit"><img alt="" src="{{url_for('static', filename='images/board/nan.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 18: Mathematics <br/>
+                    <b>Year:</b> Class of 2019 <br/>
+                    <b>Position:</b> 2018 Director <br/>
+                    <b>Hobbies:</b> Traveling, Hiking, Eating, Yoga, Salsa Dancing, Fantasy Football <br/>
+                    <b>Favorite Science Experiment:</b> Elephant Toothpaste with Hydrogen Peroxide! <br/>
+                    <b>Fun Fact:</b> You and I add up better than a Riemann Sum ;) <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Kelvin Lu</h2>
+                </header>
+                <a class="image fit"><img alt="" src="{{url_for('static', filename='images/board/kelvin.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 6-2: EECS <br/>
+                    <b>Year:</b> Class of 2019 <br/>
+                    <b>Position:</b> 2018 Director <br/>
+                    <b>Hobbies: </b> Baking pastries, Reading, Dancing (K-Pop!), Contributing to the Online Discourse
+                    <br/>
+                    <b>Favorite Science Experiment:</b> Magnifying glass on a hot, dry summer day to burn leaves! <br/>
+                    <b>Fun Fact:</b> I met a girl named Joule before! Lots of energy. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Alice Zhou</h2>
+                </header>
+                <a class="image fit"><img alt="" src="{{url_for('static', filename='images/board/alice.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 7 & 15: Biology and Management <br/>
+                    <b>Year:</b> Class of 2020 <br/>
+                    <b>Position:</b> Previous Board member <br/>
+                    <b>Hobbies: </b> Reading, Traveling, Exploring, Fencing, Drinking tea, Saving lives as an EMT 😉
+                    <br/>
+                    <b>Favorite Science Experiment:</b> Creating glow in the dark E.coli!<br/>
+                    <b>Fun Fact:</b> She loves all types of potatoes. <br/>
+                </p>
+            </article>
+
+            <article>
+                <header>
+                    <h2>Siddarth Guha</h2>
+                </header>
+                <a class="image fit"><img alt="" src="{{url_for('static', filename='images/board/sid.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 20: Biological Engineering <br/>
+                    <b>Year:</b> Class of 2019 <br/>
+                    <b>Position:</b> Previous Board member <br/>
+                    <b>Hobbies: </b> Singing, Theater, Asian food, Horror Movies <br/>
+                    <b>Favorite Science Experiment:</b> The Barking Dog!<br/>
+                    <b>Fun Fact:</b> When I got to college, my roommate always took out the trash for me when I wasn't
+                    around, so for the first semester of college, I thought we had a room service that would take out
+                    our trash for us. <br/>
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2>Yonah Borns-Weil </h2>
+                </header>
+                <a class="image fit"><img alt="" src="{{url_for('static', filename='images/board/yonah.jpg')}}"/></a>
+                <p>
+                    <b>Major:</b> Course 18: Mathematics <br/>
+                    <b>Year:</b> Class of 2018<br/>
+                    <b>Position:</b> Previous Board member <br/>
+                    <b>Hobbies: </b> : Skiing, Hiking, Lifting weights, Ping pong, Other sports that I’m even worse at,
+                    Talking over-energetically about random stuff, Traveling, Really spicy food, Making really long
+                    lists <br/>
+                    <b>Favorite Science Experiment:</b> Making Lichtenberg figures on wood (don’t try this one at home)!<br/>
+                    <b>Fun Fact:</b> Most physicists agree that the big bang had the greatest energy density in history,
+                    but I think that I’m a close second. <br/>
+                </p>
+            </article>
+        </section>
+    </div>
+    {% endblock %}

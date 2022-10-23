@@ -1,59 +1,75 @@
 {% extends "layout.html" %}
 {% block body %}
-	<body class="is-loading">
+<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a  class="logo">Testimonials</a>
-					</header>
+    <!-- Header -->
+    <header id="header">
+        <a class="logo">Testimonials</a>
+    </header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="{{url_for('index') }}">Home</a></li>
-							<li><a href="{{ url_for('about')  }}">About</a></li>
-							<li><a href="{{  url_for('generic')  }}">Board</a></li>
-							<li><a href="{{ url_for('elements')  }}">Donate</a></li>
-							<li><a href="{{ url_for('apply')  }}">Apply</a></li>
-							<li><a href="{{ url_for('publicity')  }}">Publicity</a></li>
-							<li><a href="{{ url_for('faq')  }}">FAQ</a></li>							
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/dynamitnonprofit/" class="icon fa-facebook" target="_blank"><span class="label" >Facebook</span></a></li>
-							<li><a href="https://github.com/MIT-dynaMIT" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="{{url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about')  }}">About</a></li>
+            <li><a href="{{  url_for('generic')  }}">Board</a></li>
+            <li><a href="{{ url_for('elements')  }}">Donate</a></li>
+            <li><a href="{{ url_for('apply')  }}">Apply</a></li>
+            <li><a href="{{ url_for('publicity')  }}">Publicity</a></li>
+            <li><a href="{{ url_for('faq')  }}">FAQ</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a class="icon fa-facebook" href="https://www.facebook.com/dynamitnonprofit/" target="_blank"><span
+                    class="label">Facebook</span></a></li>
+            <li><a class="icon fa-github" href="https://github.com/MIT-dynaMIT" target="_blank"><span class="label">GitHub</span></a>
+            </li>
+        </ul>
+    </nav>
 
 
-				<!-- Main -->
-					<div id="main">
+    <!-- Main -->
+    <div id="main">
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>Hear From Others!</h1>
-								</header>
+        <!-- Post -->
+        <section class="post">
+            <header class="major">
+                <h1>Hear From Others!</h1>
+            </header>
 
-								<!-- Image -->
-								<h2>Susan, parent</h2>
-									<span class="image right"><img src="{{url_for('static', filename='images/testimonials_detail.jpg')}}" alt="" /></span>
-									<blockquote>"Julian is really enjoying himself and I applaud all the hard work you and the other mentors have put into giving the kids an energizing and engaging week.  In this era of high stake testing and common core curriculum there isn't much room for group problem solving and hands-on learning so I appreciate that Julian has a chance for that this summer."</blockquote>
+            <!-- Image -->
+            <h2>Susan, parent</h2>
+            <span class="image right"><img alt=""
+                                           src="{{url_for('static', filename='images/testimonials_detail.jpg')}}"/></span>
+            <blockquote>"Julian is really enjoying himself and I applaud all the hard work you and the other mentors
+                have put into giving the kids an energizing and engaging week. In this era of high stake testing and
+                common core curriculum there isn't much room for group problem solving and hands-on learning so I
+                appreciate that Julian has a chance for that this summer."
+            </blockquote>
 
-								<h2>Donna, parent</h2>
-									<blockquote>"So far my Anthony has LOVED this experience.  You are all doing a wonderful job instilling a love of science in these kids.  Thanks so much!!"</blockquote>
+            <h2>Donna, parent</h2>
+            <blockquote>"So far my Anthony has LOVED this experience. You are all doing a wonderful job instilling a
+                love of science in these kids. Thanks so much!!"
+            </blockquote>
 
-								<h2>Carol, parent</h2>
-									<span class="image right"><img src="{{url_for('static', filename='images/testimonial_detail_2.jpg')}}" alt="" /></span>
-									<blockquote>"I would like to thank all of you for taking the time to put together such a wonderful summer camp. This was the very first camp that my son Alex ever participated in, and I am very grateful that he was chosen for the program. Alex, nightly, would rave about all the new things he was taught everyday. Some of his favorite memories were working with the LEGO Mindstorms robot, making his own ice cream, the blubber gloves, and the MIT museum.  He enjoyed making new friends and learning so much from all you mentors. Once again, thank you so much and I hope Alex will see you all next year."</blockquote>
-									
+            <h2>Carol, parent</h2>
+            <span class="image right"><img alt=""
+                                           src="{{url_for('static', filename='images/testimonial_detail_2.jpg')}}"/></span>
+            <blockquote>"I would like to thank all of you for taking the time to put together such a wonderful summer
+                camp. This was the very first camp that my son Alex ever participated in, and I am very grateful that he
+                was chosen for the program. Alex, nightly, would rave about all the new things he was taught everyday.
+                Some of his favorite memories were working with the LEGO Mindstorms robot, making his own ice cream, the
+                blubber gloves, and the MIT museum. He enjoyed making new friends and learning so much from all you
+                mentors. Once again, thank you so much and I hope Alex will see you all next year."
+            </blockquote>
 
-								<!-- Preformatted Code -->
 
-							</section>
+            <!-- Preformatted Code -->
 
-					</div>
+        </section>
 
-{% endblock %}
+    </div>
+
+    {% endblock %}

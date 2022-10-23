@@ -1,68 +1,90 @@
 {% extends "layout.html" %}
 {% block body %}
-	<body class="is-loading">
+<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a  class="logo">Help Us Make a Difference</a>
-					</header>
+    <!-- Header -->
+    <header id="header">
+        <a class="logo">Help Us Make a Difference</a>
+    </header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="{{url_for('index') }}">Home</a></li>
-							<li><a href="{{ url_for('about')  }}">About</a></li>
-							<li><a href="{{  url_for('generic')  }}">Board</a></li>
-							<li><a href="{{ url_for('elements')  }}">Donate</a></li>
-							<li><a href="{{ url_for('apply')  }}">Apply</a></li>
-							<li><a href="{{ url_for('publicity')  }}">Publicity</a></li>
-							<li><a href="{{ url_for('faq')  }}">FAQ</a></li>							
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/dynamitnonprofit/" class="icon fa-facebook" target="_blank"><span class="label" >Facebook</span></a></li>
-							<li><a href="https://github.com/MIT-dynaMIT" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>Past Sponsors</h1>
-								</header>
-
-								<!-- Text stuff -->
-									<p>As a student-run organization that aims to keep the cost of dynaMIT completely free, we are often limited by our small budget. Below are our sponsors whose generosity has made our program what it is today.
-
-								<!-- Image -->
-								<div class="box alt">
-										<div class="row 50% uniform">
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/1.jpg')}}" alt="Rebecca's Cafe" /></span></div>
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/2.jpg')}}" alt="Au Bon Pain" /></span></div>
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/3.jpg')}}" alt="The Asgard" /></span></div>
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/4.png')}}" alt="Whole Foods" /></span></div>
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/5.png')}}" alt="Flour" /></span></div>
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/6.jpg')}}" alt="UAAP" /></span></div>
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/7.jpg')}}" alt="MIT Office of Undergraduate Eduation" /></span></div>
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/8.png')}}" alt="Society of Women Engineers" /></span></div>
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/9.jpg')}}" alt="MIT EECS" /></span></div>
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/10.jpg')}}" alt="Anna's Tacqueria" /></span></div>
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/11.jpg')}}" alt="JP Licks" /></span></div>
-											<div class="4u"><span class="image fit"><img src="{{url_for('static', filename='images/sponsors/12.jpg')}}" alt="" /></span></div>
-										</div>
-									</div>
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="{{url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about')  }}">About</a></li>
+            <li><a href="{{  url_for('generic')  }}">Board</a></li>
+            <li><a href="{{ url_for('elements')  }}">Donate</a></li>
+            <li><a href="{{ url_for('apply')  }}">Apply</a></li>
+            <li><a href="{{ url_for('publicity')  }}">Publicity</a></li>
+            <li><a href="{{ url_for('faq')  }}">FAQ</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a class="icon fa-facebook" href="https://www.facebook.com/dynamitnonprofit/" target="_blank"><span
+                    class="label">Facebook</span></a></li>
+            <li><a class="icon fa-github" href="https://github.com/MIT-dynaMIT" target="_blank"><span class="label">GitHub</span></a>
+            </li>
+        </ul>
+    </nav>
 
 
-								<!-- Preformatted Code -->
+    <!-- Main -->
+    <div id="main">
 
-							</section>
+        <!-- Post -->
+        <section class="post">
+            <header class="major">
+                <h1>Past Sponsors</h1>
+            </header>
 
-					</div>
+            <!-- Text stuff -->
+            <p>As a student-run organization that aims to keep the cost of dynaMIT completely free, we are often limited
+                by our small budget. Below are our sponsors whose generosity has made our program what it is today.
 
-{% endblock %}
+                <!-- Image -->
+            <div class="box alt">
+                <div class="row 50% uniform">
+                    <div class="4u"><span class="image fit"><img
+                            alt="Rebecca's Cafe" src="{{url_for('static', filename='images/sponsors/1.jpg')}}"/></span>
+                    </div>
+                    <div class="4u"><span class="image fit"><img
+                            alt="Au Bon Pain" src="{{url_for('static', filename='images/sponsors/2.jpg')}}"/></span>
+                    </div>
+                    <div class="4u"><span class="image fit"><img
+                            alt="The Asgard" src="{{url_for('static', filename='images/sponsors/3.jpg')}}"/></span>
+                    </div>
+                    <div class="4u"><span class="image fit"><img
+                            alt="Whole Foods" src="{{url_for('static', filename='images/sponsors/4.png')}}"/></span>
+                    </div>
+                    <div class="4u"><span class="image fit"><img
+                            alt="Flour" src="{{url_for('static', filename='images/sponsors/5.png')}}"/></span></div>
+                    <div class="4u"><span class="image fit"><img
+                            alt="UAAP" src="{{url_for('static', filename='images/sponsors/6.jpg')}}"/></span></div>
+                    <div class="4u"><span class="image fit"><img
+                            alt="MIT Office of Undergraduate Eduation"
+                            src="{{url_for('static', filename='images/sponsors/7.jpg')}}"/></span></div>
+                    <div class="4u"><span class="image fit"><img
+                            alt="Society of Women Engineers"
+                            src="{{url_for('static', filename='images/sponsors/8.png')}}"/></span></div>
+                    <div class="4u"><span class="image fit"><img
+                            alt="MIT EECS" src="{{url_for('static', filename='images/sponsors/9.jpg')}}"/></span></div>
+                    <div class="4u"><span class="image fit"><img
+                            alt="Anna's Tacqueria"
+                            src="{{url_for('static', filename='images/sponsors/10.jpg')}}"/></span></div>
+                    <div class="4u"><span class="image fit"><img
+                            alt="JP Licks" src="{{url_for('static', filename='images/sponsors/11.jpg')}}"/></span></div>
+                    <div class="4u"><span class="image fit"><img
+                            alt="" src="{{url_for('static', filename='images/sponsors/12.jpg')}}"/></span></div>
+                </div>
+            </div>
+
+
+            <!-- Preformatted Code -->
+
+        </section>
+
+    </div>
+
+    {% endblock %}

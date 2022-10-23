@@ -1,58 +1,63 @@
 {% extends "layout.html" %}
 {% block body %}
-	<body class="is-loading">
+<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a class="logo">Join Us</a>
-					</header>
+    <!-- Header -->
+    <header id="header">
+        <a class="logo">Join Us</a>
+    </header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="{{url_for('index') }}">Home</a></li>
-							<li><a href="{{ url_for('about')  }}">About</a></li>
-							<li><a href="{{  url_for('generic')  }}">Board</a></li>
-							<li><a href="{{ url_for('elements')  }}">Donate</a></li>
-							<li><a href="{{ url_for('apply')  }}">Apply</a></li>
-							<li><a href="{{ url_for('publicity')  }}">Publicity</a></li>
-							<li><a href="{{ url_for('faq')  }}">FAQ</a></li>							
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/dynamitnonprofit/" class="icon fa-facebook" target="_blank"><span class="label" >Facebook</span></a></li>
-							<li><a href="https://github.com/MIT-dynaMIT" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="{{url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about')  }}">About</a></li>
+            <li><a href="{{  url_for('generic')  }}">Board</a></li>
+            <li><a href="{{ url_for('elements')  }}">Donate</a></li>
+            <li><a href="{{ url_for('apply')  }}">Apply</a></li>
+            <li><a href="{{ url_for('publicity')  }}">Publicity</a></li>
+            <li><a href="{{ url_for('faq')  }}">FAQ</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a class="icon fa-facebook" href="https://www.facebook.com/dynamitnonprofit/" target="_blank"><span
+                    class="label">Facebook</span></a></li>
+            <li><a class="icon fa-github" href="https://github.com/MIT-dynaMIT" target="_blank"><span class="label">GitHub</span></a>
+            </li>
+        </ul>
+    </nav>
 
 
-				<!-- Main -->
-					<div id="main">
-						<article class="post featured">
-							<header class="major">
-								<h1>dynaMIT 2022 Mentor Application</h1>
-							</header>
-							<p>
-								 The mentor application for dynaMIT summer of 2022 is now open! Applications will close on Sunday, March 6th at 11:59 PM EST.
-<!--								The mentor application for dynaMIT summer of 2021 is now closed.-->
-							</p>
-							<ul class="actions">
-								<li>
-								 <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5HpYZvhpfPryBK1rprl4lVkF0FiH-7M6HKaCNiFc62EbjMQ/viewform" class="button" target = "_blank">
-									 Open the form in a new tab
-								 </a>
-								</li>
-							</ul>
-											<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5HpYZvhpfPryBK1rprl4lVkF0FiH-7M6HKaCNiFc62EbjMQ/viewform?embedded=true" -->
-											<iframe src=""
-									width="100%"
-									height="1500"
-									frameborder="0"
-									marginheight="0"
-									marginwidth="0">Loading...</iframe>
-						</article>
-					</div>
+    <!-- Main -->
+    <div id="main">
+        <article class="post featured">
+            <header class="major">
+                <h1>dynaMIT 2022 Mentor Application</h1>
+            </header>
+            <p>
+                The mentor application for dynaMIT summer of 2022 is now open! Applications will close on Sunday, March
+                6th at 11:59 PM EST.
+                <!--								The mentor application for dynaMIT summer of 2021 is now closed.-->
+            </p>
+            <ul class="actions">
+                <li>
+                    <a class="button"
+                       href="https://docs.google.com/forms/d/e/1FAIpQLSd5HpYZvhpfPryBK1rprl4lVkF0FiH-7M6HKaCNiFc62EbjMQ/viewform" target="_blank">
+                        Open the form in a new tab
+                    </a>
+                </li>
+            </ul>
+            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5HpYZvhpfPryBK1rprl4lVkF0FiH-7M6HKaCNiFc62EbjMQ/viewform?embedded=true" -->
+            <iframe frameborder="0"
+                    height="1500"
+                    marginheight="0"
+                    marginwidth="0"
+                    src=""
+                    width="100%">Loading...
+            </iframe>
+        </article>
+    </div>
 
-{% endblock %}
+    {% endblock %}

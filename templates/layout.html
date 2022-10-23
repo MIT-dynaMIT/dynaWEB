@@ -5,76 +5,82 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>MIT DynaMIT</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
-		<!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> -->
-		<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
-		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
-	</head>
-				
-	{% block body %} {% endblock %}
+<head>
+    <title>MIT DynaMIT</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <link href="{{ url_for('static', filename='assets/css/main.css') }}" rel="stylesheet"/>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> -->
+    <link href="{{ url_for('static', filename='images/favicon.ico') }}" rel="shortcut icon" type="image/x-icon"/>
+    <noscript>
+        <link href="{{ url_for('static', filename='assets/css/noscript.css') }}" rel="stylesheet"/>
+    </noscript>
+</head>
+
+{% block body %} {% endblock %}
 
 <!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="{{ url_for('contact_us') }}">
-								<div class="field">
-									<label for="name">Use the form below for any queries - we will respond as soon as possible!</label>
-								</div>								
-								<div class="field">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
-								</div>
-								<div class="field">
-									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="3"></textarea>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>77 Massachusetts Avenue<br />
-								Cambridge, MA 02139</p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a>dynamit_board@mit.edu</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.facebook.com/dynamitnonprofit/" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://github.com/MIT-dynaMIT" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+<footer id="footer">
+    <section>
+        <form action="{{ url_for('contact_us') }}" method="post">
+            <div class="field">
+                <label for="name">Use the form below for any queries - we will respond as soon as possible!</label>
+            </div>
+            <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text"/>
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text"/>
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="3"></textarea>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message"/></li>
+            </ul>
+        </form>
+    </section>
+    <section class="split contact">
+        <section class="alt">
+            <h3>Address</h3>
+            <p>77 Massachusetts Avenue<br/>
+                Cambridge, MA 02139</p>
+        </section>
+        <section>
+            <h3>Email</h3>
+            <p><a>dynamit_board@mit.edu</a></p>
+        </section>
+        <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+                <li><a class="icon alt fa-facebook" href="https://www.facebook.com/dynamitnonprofit/"
+                       target="_blank"><span class="label">Facebook</span></a></li>
+                <li><a class="icon alt fa-github" href="https://github.com/MIT-dynaMIT" target="_blank"><span
+                        class="label">GitHub</span></a></li>
+            </ul>
+        </section>
+    </section>
+</footer>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>Design: HTML5up</li></ul>
-					</div>
+<!-- Copyright -->
+<div id="copyright">
+    <ul>
+        <li>Design: HTML5up</li>
+    </ul>
+</div>
 
-			</div>
+</div>
 
-		<!-- Scripts -->
-			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/skel.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+<!-- Scripts -->
+<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/skel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 
-	</body>
+</body>
 </html>
